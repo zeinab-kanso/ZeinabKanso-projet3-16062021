@@ -1,3 +1,58 @@
 $couleur-primaire: #9356dc;
 $couleur-secondaire: #ff79da;
 $couleur-tertiaire: #99e2d0;
+
+.restaurants {
+  background-color: #f2f2f2;
+  flex-direction: column;
+  padding: 50px 20px 60px 20px;
+  &__titre > h2 {
+    margin-top: 0;
+    margin-bottom: 25px;
+  }
+  &__contenu {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-gap: 20px;
+  }
+  &__menu {
+    position: relative;
+    display: flex;
+    flex-direction: column-reverse;
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px 0 lightgrey;
+    &--image {
+      height: 250px;
+      width: 100%;
+      & > img {
+        object-fit: cover;
+        border-radius: 20px;
+        width: 100%;
+        height: 100%;
+      }
+    }
+    &--new {
+      position: absolute;
+      background-color: $couleur-tertiaire;
+      top: 15px;
+      right: 15px;
+    }
+  }
+  &__description {
+    position: absolute;
+    display: flex;
+
+    align-items: center;
+    width: 100%;
+    height: 75px;
+    background-color: white;
+    border-radius: 0 0 20px 20px;
+
+    &--info {
+    }
+    &--nom {
+    }
+  }
+}
