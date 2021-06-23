@@ -1,7 +1,11 @@
 $couleur-primaire: #9356dc;
 $couleur-secondaire: #ff79da;
 $couleur-tertiaire: #99e2d0;
-
+@mixin flexbox-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 body {
   font-family: "roboto", sans-serif;
   margin: 0;
@@ -9,6 +13,28 @@ body {
 a {
   text-decoration: none;
   color: inherit;
+}
+.header__logo {
+  @include flexbox-center();
+  font-family: "Shrikhand", sans-serif;
+  background-color: #fff;
+}
+.location {
+  @include flexbox-center();
+  background-color: #e8e8e8;
+}
+
+.intro {
+  width: 100%;
+  background-color: #f2f2f2;
+  &__contenu {
+    @include flexbox-center();
+    flex-direction: column;
+  }
+
+  &__titre {
+    @include flexbox-center();
+  }
 }
 .restaurants {
   background-color: #f2f2f2;
@@ -62,6 +88,7 @@ a {
       padding-left: 10px;
     }
     &--nom {
+      font-weight: bold;
     }
     &--like {
       padding-right: 20px;
