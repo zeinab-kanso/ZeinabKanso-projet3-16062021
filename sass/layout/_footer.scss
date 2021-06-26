@@ -1,0 +1,33 @@
+.footer__contenu {
+  background-color: #383838;
+  color: white;
+  width: 100%;
+
+  .footer__logo {
+    font-family: "Shrikhand", sans-serif;
+    h1 {
+      margin: 0;
+      padding: 20px 0 15px 20px;
+    }
+  }
+  &--liens {
+    margin-left: 20px;
+    padding-bottom: 27px;
+    display: flex;
+    flex-direction: column;
+  }
+  &--lien {
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 8px;
+    & i {
+      margin-right: 8px;
+    }
+
+    &__titre {
+      margin: 0;
+    }
+  }
+}
