@@ -1,4 +1,6 @@
-.header__logo {
-  font-family: "Shrikhand", sans-serif;
-  background-color: #fff;
+.header {
+  &__logo {
+    font-family: "Shrikhand", sans-serif;
+    margin: 0;
+  }
 }
