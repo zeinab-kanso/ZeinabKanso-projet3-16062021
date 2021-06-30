@@ -137,6 +137,12 @@ a {
   top: 15px;
   right: 15px;
 }
+.restaurants__menu--new p {
+  color: #107e66;
+  margin: 0;
+  padding: 8px 10px;
+  font-weight: 500;
+}
 .restaurants__description {
   position: absolute;
   display: flex;
