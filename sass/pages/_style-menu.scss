@@ -41,13 +41,23 @@ $couleur-white: #ffffff;
 
     &__partie {
       display: grid;
-      grid-gap: 12px;
+      grid-gap: 13px;
     }
+
     &__description {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
       background: $couleur-white;
       height: auto;
       width: auto;
-      border-radius: 20px;
+      border-radius: 15px;
+      box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.05);
     }
   }
+}
+.menu-info-et-prix {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
