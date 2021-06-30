@@ -3,7 +3,7 @@
     background-color: #383838;
     color: $couleur-white;
     width: 100%;
-    max-width: 1400px;
+
     & .footer__logo {
       font-family: "Shrikhand", sans-serif;
       margin: 0;
@@ -32,7 +32,7 @@
 
       &__titre {
         margin: 0;
-        font-size: 18px;
+        font-size: 16px;
         font-weight: 400;
       }
     }
