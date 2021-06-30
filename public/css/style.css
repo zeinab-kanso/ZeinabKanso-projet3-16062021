@@ -28,11 +28,11 @@ a {
 }
 
 .location {
+  height: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: #e8e8e8;
-  padding: 12px 0;
 }
 .location__icone {
   margin-right: 15px;
@@ -43,6 +43,7 @@ a {
   background-color: #f2f2f2;
 }
 .intro__contenu {
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -50,11 +51,17 @@ a {
   padding: 40px 0 55px 0;
 }
 .intro__titre {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  text-align: center;
+  max-width: 240px;
 }
-
+.intro__titre h2 {
+  margin: 0;
+}
+.intro__texte {
+  max-width: 320px;
+  text-align: center;
+  margin: 15px 0 25px 0;
+}
 .fonctionnement {
   width: 95%;
   display: flex;
@@ -88,7 +95,7 @@ a {
   border-radius: 50%;
   height: 25px;
   width: 25px;
-  display: inline-flex;
+  display: flex;
   justify-content: center;
   align-items: center;
   position: absolute;
@@ -187,9 +194,9 @@ a {
 }
 .menu__entete {
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  flex-direction: row;
 }
 .menu__entete--titre > h2 {
   margin: 0;
