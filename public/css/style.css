@@ -3,6 +3,11 @@
   position: relative;
   width: 100%;
 }
+.header__arrow {
+  left: 25px;
+  top: 20px;
+  position: absolute;
+}
 .header__logo {
   font-family: "Shrikhand", sans-serif;
   height: 60px;
