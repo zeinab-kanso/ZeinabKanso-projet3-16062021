@@ -18,7 +18,7 @@
 }
 .header__logo h1 {
   margin: 0;
-  font-size: 26px;
+  font-size: 28px;
 }
 
 body {
@@ -221,12 +221,15 @@ a {
   font-weight: 700;
   font-size: 18px;
 }
-.restaurants__description--like {
-  padding-right: 20px;
-}
-.restaurants__description--like i:hover {
+.restaurants__description i:hover {
   cursor: pointer;
   background: linear-gradient(180deg, #ff79da 0%, #9356dc 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: #ff79da !important;
+}
+.restaurants__description .fas.fa-heart {
+  color: transparent !important;
 }
 
 @media screen and (min-width: 800px) {
@@ -277,18 +280,27 @@ body {
   justify-content: space-between;
   align-items: center;
   flex-direction: row;
+  margin: 20px;
 }
 .menu__entete--titre > h2 {
   margin: 0;
   font-family: "Shrikhand", sans serif;
+  font-size: 28px;
 }
-.menu__entete--like i:hover {
+.menu__entete i:hover {
   cursor: pointer;
   background: linear-gradient(180deg, #ff79da 0%, #9356dc 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: #ff79da !important;
+}
+.menu__entete .fas.fa-heart {
+  color: transparent !important;
 }
 .menu__contenu {
   display: grid;
   grid-gap: 40px;
+  padding: 0 20px;
 }
 .menu__contenu__partie {
   display: grid;

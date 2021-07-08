@@ -38,3 +38,13 @@
     }
   }
 }
+@media screen and (min-width: 800px) {
+  .footer {
+    &__contenu {
+      &--liens {
+        flex-direction: row;
+        gap: 30px;
+      }
+    }
+  }
+}
