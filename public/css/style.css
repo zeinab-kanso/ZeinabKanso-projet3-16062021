@@ -221,6 +221,9 @@ a {
   font-weight: 700;
   font-size: 18px;
 }
+.restaurants__description i {
+  font-size: 20px;
+}
 .restaurants__description i:hover {
   cursor: pointer;
   background: linear-gradient(180deg, #ff79da 0%, #9356dc 100%);
@@ -280,12 +283,15 @@ body {
   justify-content: space-between;
   align-items: center;
   flex-direction: row;
-  margin: 20px;
+  margin: 20px 10px 0 30px;
 }
 .menu__entete--titre > h2 {
   margin: 0;
   font-family: "Shrikhand", sans serif;
   font-size: 28px;
+}
+.menu__entete i {
+  font-size: 30px;
 }
 .menu__entete i:hover {
   cursor: pointer;
@@ -323,12 +329,38 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: relative;
+  overflow: hidden;
   background: #ffffff;
   height: auto;
   width: 100%;
   cursor: pointer;
   border-radius: 15px;
   box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.05);
+}
+.menu__contenu__description:hover .check {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: slide-left 0.5s ease;
+  transform-origin: right;
+}
+.menu__contenu__description:hover .menu__description-prix {
+  padding-right: 70px;
+  transition: 0.5s ease;
+}
+.menu__contenu__description .check {
+  display: none;
+  position: absolute;
+  background: #99e2d0;
+  border-radius: 0 15px 15px 0;
+  right: 0px;
+  padding: 0 13px;
+  height: 100%;
+}
+.menu__contenu__description .check i {
+  font-size: 30px;
+  color: white;
 }
 .menu__description__food--nom {
   font-weight: 700;
@@ -341,15 +373,6 @@ body {
   padding-right: 20px;
   font-weight: bold;
   padding-left: 7px;
-}
-.menu .check {
-  display: none;
-  position: absolute;
-  background: #99e2d0;
-  border-radius: 0 15px 15px 0;
-  right: 0px;
-  padding: 0 13px;
-  height: 100%;
 }
 .menu__boutton {
   display: flex;

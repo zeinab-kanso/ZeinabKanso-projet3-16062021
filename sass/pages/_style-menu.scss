@@ -40,11 +40,15 @@ body {
   &__entete {
     @include flex-spacebetween;
     flex-direction: row;
-    margin: 20px;
+    margin: 20px 10px 0 30px;
+
     &--titre > h2 {
       margin: 0;
       font-family: "Shrikhand", sans serif;
       font-size: 28px;
+    }
+    i {
+      font-size: 30px;
     }
     i:hover {
       cursor: pointer;
@@ -85,12 +89,36 @@ body {
 
     &__description {
       @include flex-spacebetween();
+      position: relative;
+      overflow: hidden;
       background: $couleur-white;
       height: auto;
       width: 100%;
       cursor: pointer;
       border-radius: 15px;
       box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.05);
+      &:hover .check {
+        @include flexbox-center;
+        animation: slide-left 0.5s ease;
+        transform-origin: right;
+      }
+      &:hover .menu__description-prix {
+        padding-right: 70px;
+        transition: 0.5s ease;
+      }
+      .check {
+        display: none;
+        position: absolute;
+        background: $couleur-tertiaire;
+        border-radius: 0 15px 15px 0;
+        right: 0px;
+        padding: 0 13px;
+        height: 100%;
+        i {
+          font-size: 30px;
+          color: white;
+        }
+      }
     }
   }
   &__description__food {
@@ -107,15 +135,7 @@ body {
     font-weight: bold;
     padding-left: 7px;
   }
-  .check {
-    display: none;
-    position: absolute;
-    background: $couleur-tertiaire;
-    border-radius: 0 15px 15px 0;
-    right: 0px;
-    padding: 0 13px;
-    height: 100%;
-  }
+
   &__boutton {
     @include flexbox-center;
     width: 100%;
