@@ -69,7 +69,17 @@ body {
       & h3 {
         position: relative;
         font-weight: 400;
-        text-transform: uppercase;
+
+        &::after {
+          content: "";
+          width: 50px;
+          height: 4px;
+          background: #99e2d0;
+          position: absolute;
+
+          left: 0px;
+          bottom: -8px;
+        }
       }
     }
 
@@ -81,6 +91,12 @@ body {
       cursor: pointer;
       border-radius: 15px;
       box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.05);
+    }
+  }
+  &__description__food {
+    &--nom {
+      font-weight: 700;
+      font-size: 18px;
     }
   }
   .check {
