@@ -324,6 +324,7 @@ body {
   justify-content: space-between;
   align-items: center;
   background: #ffffff;
+  height: auto;
   width: 100%;
   cursor: pointer;
   border-radius: 15px;
@@ -332,6 +333,14 @@ body {
 .menu__description__food--nom {
   font-weight: 700;
   font-size: 18px;
+}
+.menu__description__food--info {
+  font-size: 15px;
+}
+.menu__description-prix {
+  padding-right: 20px;
+  font-weight: bold;
+  padding-left: 7px;
 }
 .menu .check {
   display: none;
@@ -371,6 +380,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin: 10px 0 10px 10px;
 }
 
 .footer__contenu {

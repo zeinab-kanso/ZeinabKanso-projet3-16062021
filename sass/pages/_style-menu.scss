@@ -86,7 +86,7 @@ body {
     &__description {
       @include flex-spacebetween();
       background: $couleur-white;
-
+      height: auto;
       width: 100%;
       cursor: pointer;
       border-radius: 15px;
@@ -98,6 +98,14 @@ body {
       font-weight: 700;
       font-size: 18px;
     }
+    &--info {
+      font-size: 15px;
+    }
+  }
+  &__description-prix {
+    padding-right: 20px;
+    font-weight: bold;
+    padding-left: 7px;
   }
   .check {
     display: none;
@@ -125,4 +133,5 @@ body {
 .menu-info-et-prix {
   width: 100%;
   @include flex-spacebetween;
+  margin: 10px 0 10px 10px;
 }
