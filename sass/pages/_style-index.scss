@@ -214,6 +214,7 @@ a {
     i:hover {
       cursor: pointer;
       background: $couleur-gradient;
+      background-clip: text;
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       color: $couleur-secondaire !important;
