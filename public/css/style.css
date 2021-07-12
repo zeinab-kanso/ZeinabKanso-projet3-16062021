@@ -291,11 +291,12 @@ body {
   font-size: 28px;
 }
 .menu__entete i {
-  font-size: 30px;
+  font-size: 25px;
 }
 .menu__entete i:hover {
   cursor: pointer;
   background: linear-gradient(180deg, #ff79da 0%, #9356dc 100%);
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   color: #ff79da !important;
@@ -360,7 +361,7 @@ body {
 }
 .menu__contenu__description .check i {
   font-size: 30px;
-  color: white;
+  color: #ffffff;
 }
 .menu__description__food--nom {
   font-weight: 700;
@@ -406,6 +407,13 @@ body {
   margin: 10px 0 10px 10px;
 }
 
+@media screen and (min-width: 800px) {
+  .menu__contenu {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+  }
+}
 .footer__contenu {
   background-color: #383838;
   color: #ffffff;

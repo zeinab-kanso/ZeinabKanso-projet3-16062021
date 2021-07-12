@@ -48,11 +48,12 @@ body {
       font-size: 28px;
     }
     i {
-      font-size: 30px;
+      font-size: 25px;
     }
     i:hover {
       cursor: pointer;
       background: $couleur-gradient;
+      background-clip: text;
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       color: $couleur-secondaire !important;
@@ -80,7 +81,6 @@ body {
           height: 4px;
           background: #99e2d0;
           position: absolute;
-
           left: 0px;
           bottom: -8px;
         }
@@ -116,7 +116,7 @@ body {
         height: 100%;
         i {
           font-size: 30px;
-          color: white;
+          color: $couleur-white;
         }
       }
     }
@@ -154,4 +154,13 @@ body {
   width: 100%;
   @include flex-spacebetween;
   margin: 10px 0 10px 10px;
+}
+@media screen and (min-width: 800px) {
+  .menu {
+    &__contenu {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 1fr;
+    }
+  }
 }
