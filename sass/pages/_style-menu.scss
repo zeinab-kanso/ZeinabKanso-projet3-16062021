@@ -91,7 +91,7 @@ body {
       @include flex-spacebetween();
       position: relative;
       overflow: hidden;
-      background: $couleur-white;
+      background-color: $couleur-white;
       height: auto;
       width: 100%;
       cursor: pointer;
@@ -106,17 +106,20 @@ body {
         padding-right: 70px;
         transition: 0.5s ease;
       }
+
       .check {
         display: none;
         position: absolute;
         background: $couleur-tertiaire;
         border-radius: 0 15px 15px 0;
         right: 0px;
-        padding: 0 13px;
+        padding: 0 12px;
         height: 100%;
         i {
           font-size: 30px;
           color: $couleur-white;
+          transform: rotate(180deg);
+          animation: rotation 0.5s both;
         }
       }
     }
@@ -154,6 +157,14 @@ body {
   width: 100%;
   @include flex-spacebetween;
   margin: 10px 0 10px 10px;
+}
+@keyframes rotation {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 @media screen and (min-width: 800px) {
   .menu {
