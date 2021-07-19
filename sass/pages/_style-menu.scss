@@ -91,6 +91,7 @@ body {
       @include flex-spacebetween();
       position: relative;
       overflow: hidden;
+      white-space: nowrap;
       background-color: $couleur-white;
       height: auto;
       width: 100%;
@@ -125,12 +126,19 @@ body {
     }
   }
   &__description__food {
+    overflow: hidden;
+    text-overflow: ellipsis;
     &--nom {
       font-weight: 700;
       font-size: 18px;
+      overflow: hidden;
+      text-overflow: ellipsis;
     }
     &--info {
       font-size: 15px;
+
+      overflow: hidden;
+      text-overflow: ellipsis;
     }
   }
   &__description-prix {

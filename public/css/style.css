@@ -399,6 +399,7 @@ body {
   align-items: center;
   position: relative;
   overflow: hidden;
+  white-space: nowrap;
   background-color: #ffffff;
   height: auto;
   width: 100%;
@@ -432,12 +433,20 @@ body {
   transform: rotate(180deg);
   animation: rotation 0.5s both;
 }
+.menu__description__food {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
 .menu__description__food--nom {
   font-weight: 700;
   font-size: 18px;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .menu__description__food--info {
   font-size: 15px;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .menu__description-prix {
   padding-right: 20px;
