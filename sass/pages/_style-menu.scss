@@ -44,7 +44,7 @@ body {
 
     &--titre > h2 {
       margin: 0;
-      font-family: "Shrikhand", sans serif;
+      font-family: "Shrikhand", "sans serif";
       font-size: 28px;
     }
     i {
@@ -56,10 +56,10 @@ body {
       background-clip: text;
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
-      color: $couleur-secondaire !important;
+      color: $couleur-secondaire;
     }
     .fas.fa-heart {
-      color: transparent !important;
+      color: transparent;
     }
   }
   &__contenu {
