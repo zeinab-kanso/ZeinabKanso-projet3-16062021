@@ -98,9 +98,11 @@ body {
       cursor: pointer;
       border-radius: 15px;
       box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.05);
+      animation: move-card 1s cubic-bezier(0, 0, 0, 1) forwards;
+      opacity: 0;
       &:hover .check {
         @include flexbox-center;
-        animation: slide-left 0.5s ease;
+        animation-delay: 0.5s;
         transform-origin: right;
       }
       &:hover .menu__description-prix {
@@ -146,7 +148,44 @@ body {
     font-weight: bold;
     padding-left: 7px;
   }
+  #menu1 {
+    animation-delay: 0.1s;
+  }
 
+  #menu2 {
+    animation-delay: 0.2s;
+  }
+
+  #menu3 {
+    animation-delay: 0.3s;
+  }
+
+  #menu4 {
+    animation-delay: 0.4s;
+  }
+
+  #menu5 {
+    animation-delay: 0.5s;
+  }
+
+  #menu6 {
+    animation-delay: 0.6s;
+  }
+
+  #menu7 {
+    animation-delay: 0.7s;
+  }
+
+  #menu8 {
+    animation-delay: 0.8s;
+  }
+
+  #menu9 {
+    animation-delay: 0.9s;
+  }
+  #menu10 {
+    animation-delay: 1s;
+  }
   &__boutton {
     @include flexbox-center;
     width: 100%;
@@ -172,6 +211,14 @@ body {
   }
   100% {
     transform: rotate(360deg);
+  }
+}
+@keyframes move-card {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }
 @media screen and (min-width: 800px) {
