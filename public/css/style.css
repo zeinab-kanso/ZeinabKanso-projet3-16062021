@@ -405,7 +405,7 @@ body {
   cursor: pointer;
   border-radius: 15px;
   box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.05);
-  animation: move-card 1s cubic-bezier(0, 0, 0, 1) forwards;
+  animation: move-menu 1s cubic-bezier(0, 0, 0, 1) forwards;
   opacity: 0;
 }
 .menu__contenu__description:hover .check {
@@ -475,10 +475,13 @@ body {
 .menu #menu7 {
   animation-delay: 0.7s;
 }
-.menu #menu-8 {
+.menu #menu8 {
   animation-delay: 0.8s;
 }
-.menu #menu-9 {
+.menu #menu9 {
+  animation-delay: 0.9s;
+}
+.menu #menu10 {
   animation-delay: 0.9s;
 }
 .menu__boutton {
@@ -521,7 +524,7 @@ body {
     transform: rotate(360deg);
   }
 }
-@keyframes move-card {
+@keyframes move-menu {
   0% {
     opacity: 0;
   }

@@ -98,7 +98,7 @@ body {
       cursor: pointer;
       border-radius: 15px;
       box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.05);
-      animation: move-card 1s cubic-bezier(0, 0, 0, 1) forwards;
+      animation: move-menu 1s cubic-bezier(0, 0, 0, 1) forwards;
       opacity: 0;
       &:hover .check {
         @include flexbox-center;
@@ -176,14 +176,16 @@ body {
     animation-delay: 0.7s;
   }
 
-  #menu-8 {
+  #menu8 {
     animation-delay: 0.8s;
   }
 
-  #menu-9 {
+  #menu9 {
     animation-delay: 0.9s;
   }
-
+  #menu10 {
+    animation-delay: 0.9s;
+  }
   &__boutton {
     @include flexbox-center;
     width: 100%;
@@ -211,7 +213,7 @@ body {
     transform: rotate(360deg);
   }
 }
-@keyframes move-card {
+@keyframes move-menu {
   0% {
     opacity: 0;
   }
