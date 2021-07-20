@@ -176,16 +176,14 @@ body {
     animation-delay: 0.7s;
   }
 
-  #menu8 {
+  #menu-8 {
     animation-delay: 0.8s;
   }
 
-  #menu9 {
+  #menu-9 {
     animation-delay: 0.9s;
   }
-  #menu10 {
-    animation-delay: 1s;
-  }
+
   &__boutton {
     @include flexbox-center;
     width: 100%;

@@ -475,14 +475,11 @@ body {
 .menu #menu7 {
   animation-delay: 0.7s;
 }
-.menu #menu8 {
+.menu #menu-8 {
   animation-delay: 0.8s;
 }
-.menu #menu9 {
+.menu #menu-9 {
   animation-delay: 0.9s;
-}
-.menu #menu10 {
-  animation-delay: 1s;
 }
 .menu__boutton {
   display: flex;
